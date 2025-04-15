@@ -11,73 +11,19 @@
     <form action="/index.html" method="GET">
 
         <label for="nome">* Nome:</label>
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required pattern="^[A-Za-zÀ-ú\s]{2,}$" title="Digite um nome válido (apenas letras)">
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required pattern="^[A-Za-zÀ-ú\s]{2,}$"
+            title="Digite um nome válido (apenas letras)">
         <br>
 
         <label for="email">* E-mail:</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Digite um e-mail válido">
+        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Digite um e-mail válido">
         <br>
 
         <label for="tel">Telefone:</label>
-        <input type="tel" name="tel" id="tel" placeholder="(XX) XXXX-XXXX" pattern="\(\d{2}\)\s?\d{4}-\d{4}" title="Formato esperado: (XX) XXXX-XXXX">
+        <input type="tel" name="tel" id="tel" placeholder="(XX) XXXX-XXXX" pattern="\(\d{2}\)\s?\d{4}-\d{4}"
+            title="Formato esperado: (XX) XXXX-XXXX">
         <br>
-
-        <label for="cel">Celular:</label>
-        <input type="tel" name="cel" id="cel" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s?\d{5}-\d{4}" title="Formato esperado: (XX) XXXXX-XXXX">
-        <br>
-
-        <label for="data">* Data de nascimento:</label>
-        <input type="date" name="data" id="data" required>
-        <br>
-
-        <label for="sexo">* Sexo:</label>
-        <select name="sexo" id="sexo" required>
-            <option value="">Selecione</option>
-            <option value="masc">Masculino</option>
-            <option value="fem">Feminino</option>
-        </select>
-        <br>
-
-        <label for="cep">* CEP:</label>
-        <input type="text" name="cep" id="cep" placeholder="00000-000" required pattern="\d{5}-\d{3}" title="Formato esperado: 00000-000">
-        <br>
-
-        <label for="end">* Endereço:</label>
-        <input type="text" name="end" id="end" placeholder="Digite seu endereço completo" required>
-        <br>
-
-        <label for="num">* Número:</label>
-        <input type="text" name="num" id="num" placeholder="Número" required pattern="\d+" title="Digite apenas números">
-        <br>
-
-        <label for="comp">Complemento:</label>
-        <input type="text" name="comp" id="comp" placeholder="Apartamento, bloco, etc">
-        <br>
-
-        <label for="bairro">* Bairro:</label>
-        <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro" required>
-        <br>
-
-        <label for="cidade">* Cidade:</label>
-        <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" required>
-        <br>
-
-        <label for="est">* Estado:</label>
-        <select name="est" id="estado" required>
-            <option value="">Selecione</option>
-            <option value="sc">SC</option>
-            <option value="pr">PR</option>
-            <option value="rs">RS</option>
-        </select>
-        <br>
-
-        <label for="pais">* País:</label>
-        <select name="pais" id="pais" required>
-            <option value="br">Brasil</option>
-            <option value="uk">Londres</option>
-        </select>
-        <br>
-
         <label for="assunto">Assunto:</label>
         <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto">
         <br>
@@ -86,17 +32,12 @@
         <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
         <br><br>
 
-        <label for="cor">Selecione sua cor favorita:</label><br>
-        <input type="radio" name="cor" value="vermelho" id="cor1">Vermelho<br>
-        <input type="radio" name="cor" value="azul" id="cor2">Azul<br>
-        <input type="radio" name="cor" value="verde" id="cor3">Verde<br>
+        <label for="cor">Selecione sua preferencia de contato:</label><br>
+        <input type="radio" name="cor" value="vermelho" id="cor1">E-mail<br>
+        <input type="radio" name="cor" value="azul" id="cor2">Telefone<br>
+        <input type="radio" name="cor" value="verde" id="cor3">WhatsApp<br>
         <br>
 
-        <label for="hobbie">Selecione seus hobbies:</label><br>
-        <input type="checkbox" name="hobbie1" id="hobbie1">Leitura<br>
-        <input type="checkbox" name="hobbie2" id="hobbie2">Esporte<br>
-        <input type="checkbox" name="hobbie3" id="hobbie3">Música<br>
-        <br>
 
         <button type="submit">Enviar</button>
     </form>
