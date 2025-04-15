@@ -5,148 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade de Formulário</title>
-
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container my-5">
-        <h2 class="mb-4">Formulário de Cadastro</h2>
-        <form action="/index.html" method="GET" class="row g-3">
+    <form action="/index.html" method="GET">
 
-            <div class="col-md-6">
-                <label for="nome" class="form-label">* Nome:</label>
-                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome" required pattern="^[A-Za-zÀ-ú\s]{2,}$" title="Digite um nome válido (apenas letras)">
-            </div>
+        <label for="nome">* Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required pattern="^[A-Za-zÀ-ú\s]{2,}$" title="Digite um nome válido (apenas letras)">
+        <br>
 
-            <div class="col-md-6">
-                <label for="email" class="form-label">* E-mail:</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Digite um e-mail válido">
-            </div>
+        <label for="email">* E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Digite um e-mail válido">
+        <br>
 
-            <div class="col-md-6">
-                <label for="tel" class="form-label">Telefone:</label>
-                <input type="tel" class="form-control" name="tel" id="tel" placeholder="(XX) XXXX-XXXX" pattern="\(\d{2}\)\s?\d{4}-\d{4}" title="Formato esperado: (XX) XXXX-XXXX">
-            </div>
+        <label for="tel">Telefone:</label>
+        <input type="tel" name="tel" id="tel" placeholder="(XX) XXXX-XXXX" pattern="\(\d{2}\)\s?\d{4}-\d{4}" title="Formato esperado: (XX) XXXX-XXXX">
+        <br>
 
-            <div class="col-md-6">
-                <label for="cel" class="form-label">Celular:</label>
-                <input type="tel" class="form-control" name="cel" id="cel" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s?\d{5}-\d{4}" title="Formato esperado: (XX) XXXXX-XXXX">
-            </div>
+        <label for="cel">Celular:</label>
+        <input type="tel" name="cel" id="cel" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s?\d{5}-\d{4}" title="Formato esperado: (XX) XXXXX-XXXX">
+        <br>
 
-            <div class="col-md-4">
-                <label for="data" class="form-label">* Data de nascimento:</label>
-                <input type="date" class="form-control" name="data" id="data" required>
-            </div>
+        <label for="data">* Data de nascimento:</label>
+        <input type="date" name="data" id="data" required>
+        <br>
 
-            <div class="col-md-4">
-                <label for="sexo" class="form-label">* Sexo:</label>
-                <select class="form-select" name="sexo" id="sexo" required>
-                    <option value="">Selecione</option>
-                    <option value="masc">Masculino</option>
-                    <option value="fem">Feminino</option>
-                </select>
-            </div>
+        <label for="sexo">* Sexo:</label>
+        <select name="sexo" id="sexo" required>
+            <option value="">Selecione</option>
+            <option value="masc">Masculino</option>
+            <option value="fem">Feminino</option>
+        </select>
+        <br>
 
-            <div class="col-md-4">
-                <label for="cep" class="form-label">* CEP:</label>
-                <input type="text" class="form-control" name="cep" id="cep" placeholder="00000-000" required pattern="\d{5}-\d{3}" title="Formato esperado: 00000-000">
-            </div>
+        <label for="cep">* CEP:</label>
+        <input type="text" name="cep" id="cep" placeholder="00000-000" required pattern="\d{5}-\d{3}" title="Formato esperado: 00000-000">
+        <br>
 
-            <div class="col-12">
-                <label for="end" class="form-label">* Endereço:</label>
-                <input type="text" class="form-control" name="end" id="end" placeholder="Digite seu endereço completo" required>
-            </div>
+        <label for="end">* Endereço:</label>
+        <input type="text" name="end" id="end" placeholder="Digite seu endereço completo" required>
+        <br>
 
-            <div class="col-md-2">
-                <label for="num" class="form-label">* Número:</label>
-                <input type="text" class="form-control" name="num" id="num" placeholder="Número" required pattern="\d+" title="Digite apenas números">
-            </div>
+        <label for="num">* Número:</label>
+        <input type="text" name="num" id="num" placeholder="Número" required pattern="\d+" title="Digite apenas números">
+        <br>
 
-            <div class="col-md-4">
-                <label for="comp" class="form-label">Complemento:</label>
-                <input type="text" class="form-control" name="comp" id="comp" placeholder="Apartamento, bloco, etc">
-            </div>
+        <label for="comp">Complemento:</label>
+        <input type="text" name="comp" id="comp" placeholder="Apartamento, bloco, etc">
+        <br>
 
-            <div class="col-md-3">
-                <label for="bairro" class="form-label">* Bairro:</label>
-                <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Digite seu bairro" required>
-            </div>
+        <label for="bairro">* Bairro:</label>
+        <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro" required>
+        <br>
 
-            <div class="col-md-3">
-                <label for="cidade" class="form-label">* Cidade:</label>
-                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Digite sua cidade" required>
-            </div>
+        <label for="cidade">* Cidade:</label>
+        <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" required>
+        <br>
 
-            <div class="col-md-4">
-                <label for="estado" class="form-label">* Estado:</label>
-                <select class="form-select" name="est" id="estado" required>
-                    <option value="">Selecione</option>
-                    <option value="sc">SC</option>
-                    <option value="pr">PR</option>
-                    <option value="rs">RS</option>
-                </select>
-            </div>
+        <label for="est">* Estado:</label>
+        <select name="est" id="estado" required>
+            <option value="">Selecione</option>
+            <option value="sc">SC</option>
+            <option value="pr">PR</option>
+            <option value="rs">RS</option>
+        </select>
+        <br>
 
-            <div class="col-md-4">
-                <label for="pais" class="form-label">* País:</label>
-                <select class="form-select" name="pais" id="pais" required>
-                    <option value="br">Brasil</option>
-                    <option value="uk">Londres</option>
-                </select>
-            </div>
+        <label for="pais">* País:</label>
+        <select name="pais" id="pais" required>
+            <option value="br">Brasil</option>
+            <option value="uk">Londres</option>
+        </select>
+        <br>
 
-            <div class="col-md-4">
-                <label for="assunto" class="form-label">Assunto:</label>
-                <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Digite o assunto">
-            </div>
+        <label for="assunto">Assunto:</label>
+        <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto">
+        <br>
 
-            <div class="col-12">
-                <label for="mensagem" class="form-label">Deixe sua mensagem:</label>
-                <textarea class="form-control" name="mensagem" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
-            </div>
+        <label for="mensagem">Deixe sua mensagem:</label>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+        <br><br>
 
-            <div class="col-12">
-                <label class="form-label">Selecione sua cor favorita:</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cor" id="cor1" value="vermelho">
-                    <label class="form-check-label" for="cor1">Vermelho</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cor" id="cor2" value="azul">
-                    <label class="form-check-label" for="cor2">Azul</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cor" id="cor3" value="verde">
-                    <label class="form-check-label" for="cor3">Verde</label>
-                </div>
-            </div>
+        <label for="cor">Selecione sua cor favorita:</label><br>
+        <input type="radio" name="cor" value="vermelho" id="cor1">Vermelho<br>
+        <input type="radio" name="cor" value="azul" id="cor2">Azul<br>
+        <input type="radio" name="cor" value="verde" id="cor3">Verde<br>
+        <br>
 
-            <div class="col-12">
-                <label class="form-label">Selecione seus hobbies:</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="hobbie1" id="hobbie1">
-                    <label class="form-check-label" for="hobbie1">Leitura</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="hobbie2" id="hobbie2">
-                    <label class="form-check-label" for="hobbie2">Esporte</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="hobbie3" id="hobbie3">
-                    <label class="form-check-label" for="hobbie3">Música</label>
-                </div>
-            </div>
+        <label for="hobbie">Selecione seus hobbies:</label><br>
+        <input type="checkbox" name="hobbie1" id="hobbie1">Leitura<br>
+        <input type="checkbox" name="hobbie2" id="hobbie2">Esporte<br>
+        <input type="checkbox" name="hobbie3" id="hobbie3">Música<br>
+        <br>
 
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </form>
-    </div>
-
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 
 </html>
